@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>CS 474/574 Machine Learning HW1</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" type="text/css" media="screen, projection, print"
+    href="slideous/slideous.css" />
+  <script src="slideous/slideous.js"
+    charset="utf-8" type="text/javascript"></script>
+</head>
+<body>
+<div id="statusbar">
+<span style="float:right;">
+<span style="margin-right:4em;font-weight:bold;"><span id="slideidx"></span> of {$slidecount}</span>
+<button id="homebutton" title="first slide">1</button>
+<button id="prevslidebutton" title="previous slide">&laquo;</button>
+<button id="previtembutton" title="previous item">&lsaquo;</button>
+<button id="nextitembutton" title="next item">&rsaquo;</button>
+<button id="nextslidebutton" title="next slide">&raquo;</button>
+<button id="endbutton" title="last slide">{$slidecount}</button>
+<button id="incfontbutton" title="content">A+</button>
+<button id="decfontbutton" title="first slide">A-</button>
+<select id="tocbox" size="1"><option></option></select>
+</span>
+<span id="eos">&frac12;</span>
+<span title="{$location}, {$date}">{$title}, {$author}</span>
+</div>
+<div class="slide titlepage">
+  <h1 class="title">CS 474/574 Machine Learning<br />
+HW1</h1>
+  <p class="author">
+Carter Wunsch<br />
+Dept. of Computer Science<br />
+Iowa State University<br />
+Ames, IA, USA<br />
+  </p>
+</div>
+<div id="warm-up" class="slide section level1">
+<h1>Warm up</h1>
+<ul>
+<li>Newton’s first law states that every object will remain at rest or in uniform motion in a straight line unless compelled to change its state by the action of an external force.</li>
+<li>Einstein’s mass-energy equation: E = mc<sup>2</sup></li>
+<li>Time complexity of Quicksort on average: O(nlogn)</li>
+</ul>
+</div>
+<div id="section" class="slide section level1">
+<h1></h1>
+<p>ML (in current approaches) is about finding/approximating functions.</p>
+<ul>
+<li>Supervised, finding <span class="math inline"><em>f̂</em>(<em>x</em>) ≈ <em>f</em>(<em>x</em>)</span> with ground truth provided by human.
+<ul>
+<li>Let <span class="math inline"><em>x</em></span> and <span class="math inline"><em>y</em></span> be two (vectors of) variables, and a function connecting them <span class="math inline"><em>y</em> = <em>f</em>(<em>x</em>)</span> But only god knows <span class="math inline"><em>f</em></span>.</li>
+<li>We construct another function <span class="math inline"><em>f̂</em></span> to approximate <span class="math inline"><em>f</em></span> such that <span class="math inline"><em>ŷ</em> = <em>f̂</em>(<em>x</em>) ≈ <em>y</em> = <em>f</em>(<em>x</em>)</span> for a(ny) given <span class="math inline"><em>x</em></span>.</li>
+<li><strong>Supervised</strong> because we provide many pairs of <span class="math inline"><em>x</em></span>’s and <span class="math inline"><em>y</em></span>’s for the computer to know the difference between <span class="math inline"><em>ŷ</em></span> and <span class="math inline"><em>y</em></span> on a large pool of samples.</li>
+<li>Examples: object detection from images, <a href="http://flavia.sourceforge.net/">Flavia</a>, <a href="https://www.electronicdesign.com/technologies/microprocessors/article/21802106/ai-helps-amds-ryzen-take-on-intel">CPU branch prediction</a>, <a href="https://arxiv.org/abs/2005.06546">COVID-19 diagnosis from blood profile</a>, <a href="https://www.technologyreview.com/2009/04/29/213440/a-neural-net-that-diagnoses-epilepsy/">Epileptic EEG recognition</a>, <a href="https://mfr.osf.io/render?url=https://osf.io/b58jr/?action=download%26mode=render">depression treatment from brain shapes</a>.</li>
+<li>Beyond categorization/classification: <a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004838">Mflux</a>, <a href="https://www.aclweb.org/anthology/P15-2007.pdf">Review helpfulness prediction</a>, <a href="https://www.aclweb.org/anthology/E17-2112.pdf">Document summarization</a>, predict house prices</li>
+</ul></li>
+<li>Unsupervised, finding <span class="math inline"><em>f̂</em>(<em>x</em>)</span> without ground truth</li>
+<li><p>Reinforcement, let the machine find ground truth itself</p></li>
+<li>Note: I wasn’t sure if the answers above satisfy problem #3, so I will restate the three types of machine learning in my own words
+<ul>
+<li>Supervised: Humans provide the machine with information about cases and case outcomes</li>
+<li>Unsupervised: The machine finds patterns in the data that isn’t as obvious to us</li>
+<li>Reinforcement: The machine interacts with its environment and gets positive or negative rewards based on its actions</li>
+</ul></li>
+</ul>
+</div>
+<div id="section-1" class="slide section level1">
+<h1></h1>
+<p>The minimal dimension of the vector would be 5. We would assign each kiosk in integer value, and the vectors would be identified by which index of the vector contained a 1. Since there are 5 different kiosks, there would need to be 5 slots in the vector.</p>
+</div>
+</body>
+</html>
